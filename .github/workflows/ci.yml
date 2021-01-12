@@ -39,9 +39,6 @@ jobs:
         run: |
           cd tests
           coverage run --source=grimoirelab_toolkit run_tests.py
-      
-      - name: Coveralls Parallel
-        run: |
           coveralls
         env:
           COVERALLS_PARALLEL: true
