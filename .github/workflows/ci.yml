@@ -42,7 +42,7 @@ jobs:
           coveralls
         env:
           COVERALLS_PARALLEL: true
-          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+#           COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
   
   # Send notification when all tests have finished to combine coverage results
   coveralls:
