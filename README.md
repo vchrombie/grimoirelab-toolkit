@@ -1,6 +1,6 @@
 # GrimoireLab Toolkit [![Build Status](https://github.com/chaoss/grimoirelab-toolkit/workflows/build/badge.svg)](https://github.com/chaoss/grimoirelab-toolkit/actions?query=workflow:build+branch:master+event:push) [![Coverage Status](https://img.shields.io/coveralls/chaoss/grimoirelab-toolkit.svg)](https://coveralls.io/r/chaoss/grimoirelab-toolkit?branch=master)
 
-Toolkit of common functions used across GrimoireLab projects.
+ of common functions used across GrimoireLab projects.
 
 This package provides a library composed by functions widely used in other
 GrimoireLab projects. These function deal with date handling, introspection,
