@@ -1,5 +1,4 @@
 
-Toolkit of common functions used across GrimoireLab projects.
 
 This package provides a library composed by functions widely used in other
 GrimoireLab projects. These function deal with date handling, introspection,
