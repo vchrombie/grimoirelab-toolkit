@@ -66,8 +66,33 @@ Except in very special circumstances, that should be defined,
 contributions will be accepted under the GPLv3 (GNU Public License
 version 3).
 
-The list of current repositories is the list of projects in the
-GrimoireLab organization in GitHub.
+The list of current repositories is the list of 
+[GrimoireLab projects](https://github.com/chaoss/grimoirelab#grimoirelab-components) 
+in the [CHAOSS organization](http://github.com/chaoss) in GitHub.
+
+## DCO and Sign-Off for contributions
+
+The [CHAOSS Charter](https://github.com/chaoss/governance/blob/master/project-charter.md) 
+requires that contributions are accompanied by a 
+[Developer Certificate of Origin](http://developercertificate.org) sign-off.
+For ensuring it, a bot checks all incoming commits.
+
+For users of the git command line interface, a sign-off is accomplished 
+with the `-s` as part of the commit command: 
+
+```
+git commit -s -m 'This is a commit message'
+```
+
+For users of the GitHub interface (using the "edit" button on any file, 
+and producing a commit from it), a sign-off is accomplished by writing
+
+```
+Signed-off-by: Your Name <YourName@example.org>
+```
+
+in a single line, into the commit comment field. This can be automated 
+by using a browser plugin like [DCO GitHub UI](https://github.com/scottrigby/dco-gh-ui).
 
 #### Guidelines to follow to write good commit messages
 
@@ -239,30 +264,6 @@ of this fact, and arrange for their time to review and get the PR merged.
 It's not fair to the team to dump large pieces of work on their laps without warning.
 
 If you can rebase up a large PR into multiple smaller PRs, then do so.
-
-## DCO and Sign-Off for contributions
-
-The [CHAOSS Charter](https://github.com/chaoss/governance/blob/master/project-charter.md) 
-requires that contributions are accompanied by a 
-[Developer Certificate of Origin](http://developercertificate.org) sign-off.
-For ensuring it, a bot checks all incoming commits.
-
-For users of the git command line interface, a sign-off is accomplished 
-with the `-s` as part of the commit command: 
-
-```
-git commit -s -m 'This is a commit message'
-```
-
-For users of the GitHub interface (using the "edit" button on any file, 
-and producing a commit from it), a sign-off is accomplished by writing
-
-```
-Signed-off-by: Your Name <YourName@example.org>
-```
-
-in a single line, into the commit comment field. This can be automated 
-by using a browser plugin like [DCO GitHub UI](https://github.com/scottrigby/dco-gh-ui).
 
 ## Reviewing Pull Requests
 
