@@ -8,13 +8,13 @@ of the [CHAOSS Collaborative Project](http://chaoss.community).
 
 ## Communication means
 
-GrimoireLab  use the following communication channels:
+GrimoireLab uses the following communication channels:
 
 * Mailing list
 * IRC channel
 * Issues / Pull Requests
 
-Each of them is intended for an specific purpose. Please understand
+Each of them is intended for a specific purpose. Please understand
 that you may be redirected to some other mean if the communication you
 intend to have is considered to fit better elsewhere.
 
@@ -29,9 +29,9 @@ We use the list for:
 relationship with the CHAOS Software Technical Committee.
 * General announcements, including information about releases.
 * General discussions about the future of the project, relationship
-with other projects, new features or refactorings that really don't fit
+with other projects, new features, or refactorings that don't fit
 in other communication means.
-* Questions and community support that really don't fit in other
+* Questions and community support that doesn't fit in other
 communication means.
 
 ### IRC channel
@@ -50,10 +50,10 @@ Repositories: [GrimoireLab repositories in GitHub](https://github.com/chaoss/gri
 which are all in the [CHAOSS organization](http://github.com/chaoss).
 
 Most of the work is discussed here, including upgrades and
-proposals for upgrades, bug fixing and feature requests. For any of
+proposals for upgrades, bug fixing, and feature requests. For any of
 these, open an issue in the corresponding repository. If in doubt, ask in
-the IRC channel, or try in any one: if needed you will be redirected to
-the right repository. If you are proposing code change, open a pull request.
+the IRC channel, or try in anyone: if needed you will be redirected to
+the right repository. If you are proposing a code change, open a pull request.
 
 ## Accepting contributions
 
@@ -77,7 +77,7 @@ requires that contributions are accompanied by a
 [Developer Certificate of Origin](http://developercertificate.org) sign-off.
 For ensuring it, a bot checks all incoming commits.
 
-For users of the git command line interface, a sign-off is accomplished 
+For users of the git command-line interface, a sign-off is accomplished 
 with the `-s` as part of the commit command: 
 
 ```
@@ -111,7 +111,7 @@ start the subject with a tag
 6. Wrap the body at 72 characters
 7. Use the body to explain what and why vs. how
 
-The below git commit message is a good example which follows
+The below git commit message is a good example that follows
 the above rules.
 
 ```
@@ -148,8 +148,8 @@ See also: #456, #789
 
 ### Why do we use a Pull Request workflow?
 
-PRs are a great way of sharing information, and can help us be 
-aware of the changes that are occuring in our codebase. 
+PRs are a great way of sharing information and can help us be aware 
+of the changes that are occurring in our codebase. 
 They are also an excellent way of getting peer review on the work 
 that we do, without the cost of working in direct pairs.
 
@@ -169,11 +169,11 @@ A good quality PR will have the following characteristics:
 * It will be a complete piece of work that adds value in some way.
 * It will have a title that reflects the work within, and a summary that 
 helps to understand the context of the change.
-* There will be well written commit messages, with well crafted commits that 
+* There will be well-written commit messages, with well-crafted commits that 
 tell the story of the development of this work.
 * Ideally it will be small and easy to understand. Single commit PRs are 
 usually easy to submit, review, and merge.
-* The code contained within will meet the best practises set by the team 
+* The code contained within will meet the best practices set by the team 
 wherever possible.
 
 A PR does not end at submission though. A code change is not made 
@@ -182,42 +182,41 @@ until it is merged and used in production.
 A good PR should be able to flow through a peer review system easily and quickly.
 
 Github's recommendations for PRs, which has some useful tips on 
-notifying teams and collegues via the github @-syntax, 
+notifying teams and colleagues via the github @-syntax, 
 [How to write the perfect pull request - The GitHub Blog](https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/)
 
 ## Submitting Pull Requests
 
 ### Ensure there is a solid title and summary
 
-PRs are a GitHub workflow tool, so it's important to understand 
-that the PR title, summary and eventual discussion are not as 
-trackable as the the commit history. If we ever move away from 
-Github, we'll likely lose this infomation.
+PRs are a GitHub workflow tool, so it's important to understand that the 
+PR title, summary, and eventual discussion are not as trackable as the 
+commit history. If we ever move away from GitHub, we'll likely lose this information.
 
-That said however, they are a very useful aid in ensuring that 
+That said, however, they are a very useful aid in ensuring that 
 PRs are handled quickly and effectively.
 
-Ensure that your PR title is scannable. People will read through 
-the list of PRs attached to a repo, and must be able to distinguish 
-between them based on title. Include a story/issue reference 
-if possible, so the reviewer can get any extra context. Include a 
-reference to the subsystem affected, if this is a large codebase.
+Ensure that your PR title is scannable. People will read through the 
+list of PRs attached to a repo and must be able to distinguish between 
+them based on the title. Include a story/issue reference if possible, 
+so the reviewer can get any extra context. Include a 
+reference to the subsystem affected if this is a large codebase.
 
 Use keywords in the title to help people understand your intention with 
 the PR, eg [WIP] to indicate that it's still in progress, so should not be merged.
 
-### Rebase before you make the PR, if needed
+### Rebase before you make the PR if needed
 
 Unless there is a good reason not to rebase - typically because more 
 than one person has been working on the branch - it is often a 
 good idea to rebase your branch to tidy up before submitting the PR. 
 
-Use `git rebase -i master # or other reference, eg HEAD~5`
+Use `git rebase -i master # or another reference, eg HEAD~5`
 
 For example:
 
-* Merge 'oops, fix typo/bug' into their parent commit. There is no 
-reason to create and solve bugs within a PR, **unless there is 
+* Merge 'oops, fix typo/bug' into their parent commit. There is 
+no reason to create and solve bugs within a PR, **unless there is 
 educational value in highlighting them**.
 * Reword your commit messages for clarity. Once a PR is submitted, 
 any rewording of commits will involve a rebase, which can then mess 
@@ -255,12 +254,12 @@ an amazing amount of context to the history that the code change itself cannot *
 
 ### Keep it small
 
-Try to only fix one issue or add one feature within the pull request. The larger 
-it is, the more complex it is to review and the more likely it will be delayed. 
-Remember that reviewing PRs is taking time from someone else's day.
+Try to only fix one issue or add one feature within the pull request. 
+The larger it is, the more complex it is to review and the more likely it will 
+be delayed. Remember that reviewing PRs is taking time from someone else's day.
 
-If you must submit a large PR, try to at least make someone else aware 
-of this fact, and arrange for their time to review and get the PR merged. 
+If you must submit a large PR, try to at least make someone else aware of 
+this fact, and arrange for their time to review and get the PR merged. 
 It's not fair to the team to dump large pieces of work on their laps without warning.
 
 If you can rebase up a large PR into multiple smaller PRs, then do so.
@@ -277,19 +276,19 @@ someone examining the code in the future.
 
 ## Committers
 
-Committers have the permision to merge code in GrimoireLab. Committers
-can be for all GrimoireLab, or for specific repositories.
+Committers have permission to merge code in GrimoireLab. Committers
+can be for all GrimoireLab or specific repositories.
 
 New committers will be proposed by committers, and accepted (granted
 committer rights) by an action vote among committers (see below).
-Developers can apporach committers to ask to be proposed as comitter.
-Main rule for acceptance of new committers will be their merits on the
+Developers can approach committers to ask to be proposed as a committer.
+The main rule for acceptance of new committers will be their merits on the
 project, including past contributions and expertise.
 
 Committers may resign if they are no longer involved enough in the
 project. Committers can also propose the removal of other committer
 rights, in case they are no longer involved in the project. For being
-removed, after the proposal there will be an action voting among
+removed, after the proposal, there will be active voting among
 committers, except for the one being proposed to be removed.
 
 The current list of committers is (GitHub handles):
@@ -305,17 +304,17 @@ the project. Anyone in the mailing list can vote, to express their
 opinion, but the result of the vote will have into account only the
 votes by general committers.
 
-Votes will be casted as (details taken in part from the Apache
+Votes will be cast as (details taken in part from the Apache
 project):
 
 -  +1: Yes, agree, or the action should be performed.
--    0 : Abstain, no opinion, or I am happy to let the other group members
+-    0: Abstain, no opinion, or I am happy to let the other group members
 decide this issue.
 - -1: No, I veto this action. All vetos must include an explanation of
 why the veto is appropriate. A veto with no explanation is void.
 
-A period of four days, since the moment the action item is proposed,
-will be valid for casting votes. Any comitter can propose an action
+A period of four days, from the moment the action item is proposed,
+will be valid for casting votes. Any committer can propose an action
 vote, which will be effective if at least two other committers agree
 during a period of two days. The voting period will start when the
 proposer sends a message stating that, after the second agreement is
@@ -338,8 +337,8 @@ votes and no vetos.
 In some cases, activity related to GrimoireLab may start in
 repositories outside the GrimoireLab project. In that case, if the
 developers collaborating in those repositories want, they can inform
-GrimoireLab of their progress, and propose coordianted actions (such as
-definition of APIs). However, they will be considered external projects
+GrimoireLab of their progress, and propose coordinated actions (such as
+the definition of APIs). However, they will be considered external projects
 until the moment they are accepted as repositories in GrimoireLab, via
 an action vote.
 
@@ -373,21 +372,21 @@ is used to give attribution to community contributors. **Both are optional.**
 The `category` field maps the category of the change, valid options are: 
 added, fixed, changed, deprecated, removed, security, performance, other. 
 **Category field is mandatory.** The `notes` field should have a description 
-explaining about the changes in the code.
+explaining the changes in the code.
 
-These changelog entries would be included in the release notes which is read by 
-users who might not know anything about the internals of the code. The `notes` 
+These changelog entries would be included in the release notes which are 
+read by users who might not know anything about the internals of the code. The `notes` 
 should be written in simple language that is understandable by the audience. 
-Remember you can write blocks of text using `>` character at the beginning of 
-each block. See the above given example.
+Remember you can write blocks of text using the `>` character at the beginning 
+of each block. See the above given example.
 
 These notes will be included in the release notes. Community contributors and 
-core team members are encouraged to add their name to the `author` field.
+core team members are encouraged to add their names to the `author` field.
 
 #### What warrants a changelog entry
 
-- Any change in the code that directly affects the GrimoireLab users **must** have 
-a changelog entry. These changelog entries should be written to the 
+- Any change in the code that directly affects the GrimoireLab users **must** 
+have a changelog entry. These changelog entries should be written to the 
 `releases/unreleased/` directory.
 - New updates, Bug fixes **should** have a changelog entry.
 - Performance improvements **should** have a changelog entry.
@@ -416,7 +415,7 @@ Again, the first example is too vague and provides no context.
 - **Good:** Fix tooltips and hover states in mini pipeline graph and builds dropdown. 
 
 The first example is too focused on implementation details. The user doesn’t care 
-that we changed CSS and HTML, they care about the end result of those changes.
+that we changed CSS and HTML, they care about the result of those changes.
 
 - **Bad:** Strip out `nil`s in the Array of Commit objects returned from `find_commits_by_message_with_elastic`
 - **Good:** Fix 500 errors caused by Elasticsearch results referencing garbage-collected commits 
@@ -425,15 +424,15 @@ The first example focuses on *how* we fixed something, not on *what* it fixes.
 The rewritten version clearly describes the *end benefit* to the user 
 (fewer 500 errors), and *when* (searching commits with Elasticsearch).
 
-Use your best judgement and try to put yourself in the mindset of someone reading 
+Use your best judgment and try to put yourself in the mindset of someone reading 
 the compiled changelog. Does this entry add value? Does it offer context about 
 *where* and *why* the change was made?
 
 #### How to generate a changelog entry
 
 Contributors can use the interactive [changelog](https://github.com/Bitergia/release-tools#changelog) 
-tool for this purpose which generates the changelog entry file automatically. You will need to 
-run this script inside of the git where you store the project.
+tool for this purpose which generates the changelog entry file automatically. 
+You will need to run this script inside of the git where you store the project.
 
 Its simplest usage is to run the changelog command.
 ```
@@ -445,7 +444,7 @@ It will guide you to create a new entry. You can select the title and the type o
 >> Please specify the title of your change: Fix bug #666
 ```
 
-At this point the script would ask you to select the category of the change (mapped to 
+At this point, the script would ask you to select the category of the change (mapped to 
 the `category` field in the entry).
 ```
 >> Please specify the category of your change
@@ -476,7 +475,7 @@ You can fill the `author`, `issue`, and the `notes` fields now using the
 default editor.
 
 The entry filename is based on the title of the changelog entry file. If you run 
-the changelog command `changelog -t "Fix bug #666"`, it generates a 
+the changelog command `changelog -t "Fix bug #666"`, generates a 
 `changelogs/unreleased/fix-bug-#666.yml` file.
 
 #### Arguments
@@ -507,7 +506,7 @@ $ changelog -t "Fix bug #666" -c fixed
 
 #### `--dry-run`
 
-Use the `--dry-run` argument to prevent actually writing or committing anything: 
+Use the `--dry-run` argument to prevent writing or committing anything: 
 ```
 $ changelog -t "Fix bug #666" -c fixed --dry-run
 ---
@@ -540,9 +539,9 @@ notes: null
 
 ### History and Reasoning
 
-There are many individual components in the GrimoireLab toolset and managing, generating 
-releases is a very hard and tiring process. With the 
-[Bitergia/release-tools](https://github.com/Bitergia/release-tools) package, GrimoireLab maintainers 
-are able to automate many of the boring and time consuming tasks related with packages 
-and releases. These tools are based in the way GitLab project generates its releases. 
+There are many individual components in the GrimoireLab toolset and managing, 
+generating releases is a very hard and tiring process. With the 
+[Bitergia/release-tools](https://github.com/Bitergia/release-tools) package, 
+GrimoireLab maintainers can automate many of the boring and time-consuming tasks 
+related to packages and releases. These tools are based on the way the GitLab project generates its releases. 
 You have more information from the discussion [here](https://github.com/chaoss/grimoirelab/issues/241).
