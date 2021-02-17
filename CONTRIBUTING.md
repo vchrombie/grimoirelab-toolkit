@@ -487,8 +487,8 @@ the changelog command `changelog -t "Fix bug #666"`, it generates a
 | [`--category`](#--category-or--c) | `-c` | The category of the change. |
 | [`--dry-run`](#--dry-run) |  | Do not generate an entry. Print to the standard output instead. |
 | [`--overwrite`](#--overwrite) |  | Force to replace an existing entry. |
-| [`--editor`](#--editor) / `--no-editor` |  | Open entry in the default editor. |
-| [`--help`](#--help) |  | Print help message. |
+| `--editor` / `--no-editor` |  | Open entry in the default editor. |
+| `--help` |  | Print help message. |
 
 
 #### `--title` or `-t`
@@ -540,3 +540,9 @@ notes: null
 
 ### History and Reasoning
 
+There are many individual components in the GrimoireLab toolset and managing, generating 
+releases is a very hard and tiring process. With the 
+[Bitergia/release-tools](https://github.com/Bitergia/release-tools) package, GrimoireLab maintainers 
+are able to automate many of the boring and time consuming tasks related with packages 
+and releases. These tools are based in the way GitLab project generates its releases. 
+You have more information from the discussion [here](https://github.com/chaoss/grimoirelab/issues/241).
