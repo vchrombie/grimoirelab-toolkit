@@ -1,5 +1,12 @@
 # Releases
 
+## grimoirelab-toolkit 0.2.1 - (2021-04-21)
+
+**Bug fixes:**
+
+ * new change
+
+
 ## grimoirelab-toolkit 0.2.0 - (2021-04-20)
 
 **Security fixes:**
@@ -16,3 +23,4 @@
 * This first release contains common functions used across other
   GrimoireLab projects. These functions handle datetime objects,
   URIs/URLs and high-level introspection tools.
+
